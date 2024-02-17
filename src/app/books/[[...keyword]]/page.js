@@ -2,7 +2,7 @@ import LinkedBookDetail from "@/components/LinkedBookDetail";
 import { getBookByKeyword} from "@/lib/getter";
 
 //ルートパラメーターkeywordを取得（既定値はReact）
-export default async function BookResult({params: {keyword="React"}}){
+export default async function BookResult({params: {keyword="Next.js"}}){
 
   //与えられたキーワードを元に書籍情報を検索
   const books = await getBookByKeyword(keyword);
